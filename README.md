@@ -26,16 +26,13 @@ src/         # Root of project
 │   ├── usecase/
 │       ├── impl/               
 ├── domain/                     # Model layer (enums, models, exceptions)
-│   ├── enums/                   
 │   ├── exception/              
 │   ├── model/                   
 ├── infrastructure/             # Infrastructure layer
-│   ├── client/                 # Proxy for external API´s (request and response DTO´s)                  
 │   ├── config/                 # Beans ans Classes of project configuration               
 │   ├── controller/             # REST API services (request and response DTO´s)             
 │   ├── persistence/            # Persistence layer
 │       ├── entity/             # Data Object of persistence
 │       ├── repository/         # Data Access layer             
 │   ├── service/                # Business Logic layer
-├── shared/                     # Common files or utils
 ```
