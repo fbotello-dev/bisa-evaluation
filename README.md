@@ -1,8 +1,7 @@
 # Author
 - [@fbotello-dev](https://github.com/fbotello-dev)
 
-# Project description
-Example of a Clean Architecture implementation using:
+# Descripcion del proyecto
 - Java 17
 - Spring Boot 3.5.15
 - JPA
@@ -10,7 +9,7 @@ Example of a Clean Architecture implementation using:
 - ModelMapper
 - SpringBootTest and Mockito
 
-# Clean Architecture
+# Uso de arquitectura limpia
 ```mermaid
 flowchart LR
     controller["Controller"]
@@ -20,21 +19,27 @@ flowchart LR
     controller --> use_case --> service --> persistence
 ```
 
-# Structure of project
+# Estructura del proyecto
 ```text
 src/         # Root of project
-├── application/                # Layer of use cases (interfaces and implementations)
+├── application/                # Capa de casos de uso (interfaces and implementations)
 │   ├── usecase/
 │       ├── impl/               
-├── domain/                     # Model layer (enums, models, exceptions)
+├── domain/                     # Capa de modelos (enums, models, exceptions)
 │   ├── exception/              
 │   ├── model/                   
-├── infrastructure/             # Infrastructure layer
-│   ├── client/                 # Proxy for external API´s (request and response DTO´s)                  
-│   ├── config/                 # Beans ans Classes of project configuration               
+├── infrastructure/             # Capa de infraestructura
+│   ├── config/                 # Beans ans Classes de configuracion               
 │   ├── controller/             # REST API services (request and response DTO´s)             
-│   ├── persistence/            # Persistence layer
-│       ├── entity/             # Data Object of persistence
-│       ├── repository/         # Data Access layer             
-│   ├── service/                # Business Logic layer
+│   ├── persistence/            # Capa de persistencia
+│       ├── entity/             # Data Object cde persistencia
+│       ├── repository/         # Capa de acceso a datos             
+│   ├── service/                # Capa de logica de negocio
 ```
+
+
+# Consideraciones
+
+No tuve la condiciones tecnicas adecuadas para dar un mejor avance de la prueba, (maquina lenta y antigua). Me centre en realizar el codigo de manera 
+mas simple, limpia y entendible. Con mayor tiempo hubiera podido cumplir con todos los requerimientos de la prueba. 
+
