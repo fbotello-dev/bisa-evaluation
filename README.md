@@ -8,6 +8,7 @@ Example of a Clean Architecture implementation using:
 - JPA
 - H2 Database
 - ModelMapper
+- SpringBootTest and Mockito
 
 # Clean Architecture
 ```mermaid
@@ -29,6 +30,7 @@ src/         # Root of project
 │   ├── exception/              
 │   ├── model/                   
 ├── infrastructure/             # Infrastructure layer
+│   ├── client/                 # Proxy for external API´s (request and response DTO´s)                  
 │   ├── config/                 # Beans ans Classes of project configuration               
 │   ├── controller/             # REST API services (request and response DTO´s)             
 │   ├── persistence/            # Persistence layer
